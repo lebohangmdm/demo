@@ -8,6 +8,20 @@
   }
 }
 
+.hero {
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(59, 131, 246, 0.3),
+      rgba(59, 131, 246, 0.3)
+    ),
+    url("/images/hero.jpg");
+  height: calc(100dvh - 24px);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
