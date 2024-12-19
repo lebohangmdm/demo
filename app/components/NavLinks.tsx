@@ -26,7 +26,7 @@ export default function NavLinks() {
       <Button
         variant={"ghost"}
         onClick={toggleMenu} // Toggle on click
-        className="relative text-base font-semibold hover:text-[#0053a2]"
+        className="relative nav-link hover:text-blue-500"
       >
         Services <ChevronDown />
       </Button>
@@ -42,7 +42,7 @@ export default function NavLinks() {
             <Link
               href={component.href}
               key={component.title}
-              className="font-medium hover:text-[#0053a2] transition-colors duration-150"
+              className="font-medium hover:text-blue-500 transition-colors duration-150"
             >
               {component.title}
             </Link>

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import NavLinks from "./NavLinks";
+import Menu from "@/app/components/Menu";
 
 const Navbar = () => {
   return (
@@ -29,6 +30,7 @@ const Navbar = () => {
             </Link>
           </Button>
         </div>
+        <Menu />
       </div>
     </nav>
   );
