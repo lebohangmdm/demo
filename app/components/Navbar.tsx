@@ -5,7 +5,7 @@ import Menu from "@/app/components/Menu";
 
 const Navbar = () => {
   return (
-    <nav className="relative max-w-6xl  mx-auto py-4 px-4">
+    <nav className="relative main-container py-4">
       <div className="flex items-center justify-between">
         <div className="text-2xl">Logo</div>
         <div className="hidden lg:flex items-center gap-12">
@@ -17,17 +17,15 @@ const Navbar = () => {
           </Link>
           <NavLinks />
           <Link href={"#contact"} className="nav-link">
-            Contact us
+            Why Choose Us
           </Link>
           <Button
             variant={"default"}
-            className="py-4 px-4 hover:bg-blue-700  transition-all duration-200 "
+            className="py-4 px-4 font-semibold hover:bg-black rounded-none  transition-all duration-200 "
             size={"lg"}
             asChild
           >
-            <Link href={"#contact"} className="text-lg font-semibold">
-              Get a Quote
-            </Link>
+            <Link href={"#contact"}>Get a Quote</Link>
           </Button>
         </div>
         <Menu />

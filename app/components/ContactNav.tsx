@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ContactNav = () => {
   return (
-    <div className="max-w-6xl mx-auto bg-slate-50 py-2 px-4 flex items-center justify-center md:justify-end">
+    <div className="main-container bg-slate-50 py-2 flex items-center justify-center md:justify-end">
       <div className="flex items-center gap-5">
         <Link
           href="tel:+0115681120"
