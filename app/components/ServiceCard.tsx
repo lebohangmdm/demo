@@ -10,15 +10,18 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 export function ServiceCard({
   image,
   title,
+  slug,
   description,
   className,
 }: {
   image: StaticImageData;
   title: string;
+  slug: string;
   description: string;
   className: string;
 }) {
@@ -28,7 +31,7 @@ export function ServiceCard({
     >
       <Image
         src={image}
-        alt="commutator image"
+        alt={title}
         objectFit="cover"
         className="object-cover h-[275px] transition-transform duration-300 hover:scale-110"
       />
@@ -45,8 +48,9 @@ export function ServiceCard({
           variant={"default"}
           size={"lg"}
           className="rounded-none capitalize tracking-wider font-medium text-base hover:bg-black transition-colors duration-200"
+          asChild
         >
-          More Details
+          <Link href={`/${slug}`}>More Details</Link>
         </Button>
       </CardFooter>
     </Card>
