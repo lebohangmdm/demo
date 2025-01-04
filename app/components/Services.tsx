@@ -5,7 +5,7 @@ const Services = async () => {
   const services = await getServices();
 
   return (
-    <section className="bg-primary-foreground">
+    <section id="services" className="bg-primary-foreground">
       <div className="section-container">
         <h2 className="text-xl text-blue-500 font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
           Services
@@ -18,7 +18,7 @@ const Services = async () => {
                 slug={service.slug}
                 title={service.title}
                 image={service.image}
-                description={service.description}
+                description={service.details}
                 className={`${index % 2 === 0 ? "md:justify-self-end" : ""}`}
               />
             );

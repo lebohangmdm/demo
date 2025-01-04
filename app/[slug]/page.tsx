@@ -23,7 +23,13 @@ const page = async ({ params }: { params: { slug: string } }) => {
             {service?.title}
           </h2>
           <div className="space-y-4">
-            <p className="text-sm md:text-base">{service?.description}</p>
+            {service.summary.map((desc) => {
+              return (
+                <p key={desc.id} className="text-sm md:text-base">
+                  {desc.description}
+                </p>
+              );
+            })}
           </div>
           <ul className="flex flex-col gap-2">
             {service?.keyPoints.map((keyPoint) => {
@@ -37,13 +43,11 @@ const page = async ({ params }: { params: { slug: string } }) => {
           </ul>
         </div>
         <div>
-          {service?.image && (
-            <Image
-              src={service?.image}
-              alt={service?.title}
-              className="w-1/2 md:w-3/4 lg:w-4/5  mx-auto"
-            />
-          )}
+          <Image
+            src={service?.image}
+            alt={service?.title}
+            className="w-1/2 md:w-3/4 lg:w-4/5  mx-auto"
+          />
         </div>
       </div>
     </section>
