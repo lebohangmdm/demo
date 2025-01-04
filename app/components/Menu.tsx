@@ -1,16 +1,10 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { navLinks } from "@/lib/links";
 import { MenuIcon, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-
-const components = [
-  { title: "Home", href: "/" },
-  { title: "About Us", href: "/about" },
-  { title: "Services", href: "/services" },
-  { title: "Contact", href: "/contact" },
-];
 
 const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -38,14 +32,14 @@ const Menu = () => {
         `}
       >
         <ul className="p-4 flex flex-col gap-1 divide-y divide-black">
-          {components.map((component) => {
+          {navLinks.map((link) => {
             return (
-              <li key={component.title} className="w-full">
+              <li key={link.id} className="w-full">
                 <Link
-                  href={component.href}
+                  href={link.href}
                   className="block py-4 text-base cursor-pointer font-medium uppercase hover:text-blue-600 transition-all duration-150"
                 >
-                  {component.title}
+                  {link.name}
                 </Link>
               </li>
             );

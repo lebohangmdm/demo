@@ -4,13 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const components = [
-  { title: "Home", href: "/" },
-  { title: "About Us", href: "/about" },
-  { title: "Services", href: "/services" },
-  { title: "Contact", href: "/contact" },
-];
+import { navLinks } from "@/lib/links";
 
 export default function NavLinks() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,13 +32,13 @@ export default function NavLinks() {
             ${isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"}
             origin-top`}
         >
-          {components.map((component) => (
+          {navLinks.map((link) => (
             <Link
-              href={component.href}
-              key={component.title}
-              className="font-medium hover:text-blue-500 transition-colors duration-150"
+              href={link.href}
+              key={link.id}
+              className="font-medium  hover:text-blue-500 transition-colors duration-150"
             >
-              {component.title}
+              {link.name}
             </Link>
           ))}
         </ul>

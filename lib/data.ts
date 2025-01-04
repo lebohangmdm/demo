@@ -5,6 +5,8 @@ import img4 from "@/public/images/ac-motor.jpg";
 import img5 from "@/public/images/new-motors.jpg";
 import img6 from "@/public/images/brush-holders.jpg";
 import img7 from "@/public/images/services.jpg";
+import img8 from "@/public/images/slip-ring (2).jpg";
+import img9 from "@/public/images/statorcoil1.jpg";
 import { Service } from "./types";
 
 const services: Service[] = [
@@ -134,8 +136,8 @@ const services: Service[] = [
   },
   {
     id: "new-motor",
-    title: "New Motor Manufacturing",
-    slug: "new-motor-manufacturing",
+    title: "New Motor Manufacturing and Motor Upgrade",
+    slug: "new-motor-manufacturing-and-motor-upgrade",
     image: img5,
     details:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fugiat magni nobis inventore",
@@ -184,6 +186,59 @@ const services: Service[] = [
       { id: "3", point: "Accurate machining to ensure good brush fit" },
       { id: "4", point: "Constant force and clock spring options" },
       { id: "5", point: "Complete brush gears" },
+    ],
+  },
+
+  {
+    id: "slipring",
+    title: "Slipring",
+    slug: "slipring",
+    image: img8,
+    summary: [
+      {
+        id: "desc 1",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fugiat magni nobis inventore est voluptate. Est magni amet blanditiis deleniti ea dolores exercit",
+      },
+      {
+        id: "desc 2",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fugiat magni nobis inventore est voluptate. Est magni amet blanditiis deleniti ea dolores exercit",
+      },
+    ],
+    details:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fugiat magni nobis inventore",
+    keyPoints: [
+      { id: "1", point: "From 40mm D/A upwards" },
+      { id: "2", point: "Multi ring construction" },
+      { id: "3", point: "Quick turnaround time" },
+    ],
+  },
+  {
+    id: "armature coils",
+    title: "Armature Coils",
+    slug: "armature-coils",
+    image: img9,
+    summary: [
+      {
+        id: "desc 1",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fugiat magni nobis inventore est voluptate. Est magni amet blanditiis deleniti ea dolores exercit",
+      },
+      {
+        id: "desc 2",
+        description:
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fugiat magni nobis inventore est voluptate. Est magni amet blanditiis deleniti ea dolores exercit",
+      },
+    ],
+    details:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fugiat magni nobis inventore",
+    keyPoints: [
+      { id: "1", point: "For wave and lap armatures" },
+      { id: "2", point: "Single conductor and multiple conductor coils" },
+      { id: "3", point: "‘On edge‘ coil forming" },
+      { id: "4", point: "Consistent accurate coil shape" },
+      { id: "5", point: "Single turn and multiple turn coils" },
     ],
   },
   {
