@@ -1,6 +1,5 @@
 "use client";
 
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -8,7 +7,6 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { submitContact } from "@/lib/action";
 import { ActionResponse } from "@/lib/types";
-import { AlertCircle, CheckCircle2 } from "lucide-react";
 import { useActionState } from "react";
 import AlertMessage from "./AlertMessage";
 
@@ -130,27 +128,7 @@ function ContactForm() {
                 )}
               </div>
             </div>
-
-            {state?.message && (
-              <Alert
-                className="flex flex-col justify-center gap-2 "
-                variant={state.success ? "default" : "destructive"}
-              >
-                {state.success ? (
-                  <CheckCircle2 color="green" className="h-5 w-5" />
-                ) : (
-                  <AlertCircle className="h-5 w-5 text-red-500" />
-                )}
-                <AlertDescription
-                  className={`${
-                    state.success ? "text-green-500" : "text-red-500"
-                  }`}
-                >
-                  {state.message}
-                </AlertDescription>
-              </Alert>
-            )}
-
+            <AlertMessage success={state.success} message={state.message} />
             <Button
               size={"lg"}
               className="w-full text-base font-medium  rounded-none hover:bg-black transition-all duration-200"
