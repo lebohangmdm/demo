@@ -1,15 +1,15 @@
-import ContactForm from "./ContactForm";
+import ContactForm from "@/app/components/ContactForm";
+import ContactInfo from "@/app/components/ContactInfo";
+// import Map from "@/app/components/Map";
 
 const Contact = () => {
   return (
-    <section className="section-container">
-      <h2 className="text-xl text-blue-500 font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
-        Talk to us!
-      </h2>
-      <div className="mt-6 md:mt-12 grid lg:grid-cols-2 gap-16">
+    <section id="contact" className="py-12 md:py-16 lg:py-20">
+      <div className="max-w-6xl px-4 md:px-8 mx-auto  mt-6 md:mt-12  grid lg:grid-cols-2 gap-16">
         <ContactForm />
-        <h1 className="text-5xl text-black"> contact info</h1>
+        <ContactInfo />
       </div>
+      {/* <Map /> */}
     </section>
   );
 };

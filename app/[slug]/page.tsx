@@ -9,7 +9,13 @@ export async function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
 }
 
-const page = async ({ params }: { params: { slug: string } }) => {
+interface PageProps {
+  params: Promise<{
+    slug: string;
+  }>;
+}
+
+const page = async ({ params }: PageProps) => {
   const { slug } = await params;
   const service: Service | undefined = await getServiceBySlug(slug);
 
@@ -18,7 +24,7 @@ const page = async ({ params }: { params: { slug: string } }) => {
   return (
     <section className="section-container">
       <div className="grid md:grid-cols-[55%_45%] gap-8 lg:grid-cols-2 md:gap-12 lg:gap-16">
-        <div className="flex flex-col gap-6  md:gap-8 lg:gap-10">
+        <div className="flex flex-col gap-8  md:gap-10 lg:gap-12">
           <h2 className="text-xl text-blue-500 font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
             {service?.title}
           </h2>
@@ -46,7 +52,8 @@ const page = async ({ params }: { params: { slug: string } }) => {
           <Image
             src={service?.image}
             alt={service?.title}
-            className="w-1/2 md:w-3/4 lg:w-4/5  mx-auto"
+            style={{ objectFit: "cover" }}
+            className="w-full sm:w-5/6  md:w-3/4 lg:w-4/5  mx-auto"
           />
         </div>
       </div>

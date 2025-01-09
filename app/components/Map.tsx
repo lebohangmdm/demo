@@ -34,10 +34,12 @@ const Map = () => {
       const map = new Map(mapRef.current as HTMLDivElement, options);
 
       // add the marker in the map
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const marker = new Marker({
         map: map,
         position: locationInMap,
       });
+      console.log(map);
     };
 
     initializeMap();

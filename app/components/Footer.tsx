@@ -1,6 +1,5 @@
 import React from "react";
-import logo from "@/public/nisida-removebg-preview.png";
-import Image from "next/image";
+
 import Link from "next/link";
 import {
   Facebook,
@@ -10,7 +9,8 @@ import {
   MoveRight,
   PhoneCall,
 } from "lucide-react";
-import { footerLinks, FooterServiceLinks } from "@/lib/links";
+import { footerLinks, serviceLinks } from "@/lib/links";
+import Logo from "@/app/components/Logo";
 
 const Footer = () => {
   return (
@@ -18,14 +18,7 @@ const Footer = () => {
       <div className="section-container">
         <div className="grid grid-cols-2  lg:grid-cols-[1.5fr_1fr_1fr_1.5fr] gap-x-4 sm:gap-x-8 gap-y-8  md:gap-10 lg:gap-12 ">
           <div className="space-y-2 md:space-y-4 order-3 lg:order-1">
-            <Image
-              src={logo}
-              alt="Nisida industry logo"
-              objectFit="cover"
-              width={400}
-              height={400}
-              className="-ml-4"
-            />
+            <Logo width={400} height={400} />
 
             <div className="flex flex-col justify-between gap-6 md:gap-8">
               <p className="text-sm md:text-base">
@@ -43,7 +36,7 @@ const Footer = () => {
               Services
             </p>
             <ul className="flex flex-col gap-1 lg:gap-2">
-              {FooterServiceLinks.map((link) => {
+              {serviceLinks.map((link) => {
                 return (
                   <li key={link.id}>
                     <Link href={link.href} className="footer-link group">

@@ -32,8 +32,9 @@ export function ServiceCard({
       <Image
         src={image}
         alt={title}
-        objectFit="cover"
+        style={{ objectFit: "cover" }}
         className="object-cover h-[275px] transition-transform duration-300 hover:scale-110"
+        quality={90}
       />
       <CardHeader>
         <CardTitle className="text-lg font-medium text-blue-500">

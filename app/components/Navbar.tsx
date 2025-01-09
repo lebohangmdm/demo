@@ -1,10 +1,23 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import NavLinks from "./NavLinks";
 import Menu from "@/app/components/Menu";
 import Logo from "./Logo";
+// import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 const Navbar = () => {
+  useEffect(() => {
+    const hash = window.location.hash.replace("#", "");
+    if (hash) {
+      const element = document.getElementById(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
+
   return (
     <nav className="relative main-container h-14 sm:h-16 lg:h-20">
       <div className="flex items-center justify-between">
@@ -13,11 +26,11 @@ const Navbar = () => {
           <Link href={"/"} className="nav-link">
             Home
           </Link>
-          <Link href={"#about"} className="nav-link">
+          <Link href={"/#about"} className="nav-link">
             About us
           </Link>
           <NavLinks />
-          <Link href={"#contact"} className="nav-link">
+          <Link href={"/#why-choose-us"} className="nav-link">
             Why Choose Us
           </Link>
           <Button
@@ -26,7 +39,7 @@ const Navbar = () => {
             size={"lg"}
             asChild
           >
-            <Link href={"#contact"}>Get a Quote</Link>
+            <Link href={"/#contact"}>Get a Quote</Link>
           </Button>
         </div>
         <Menu />

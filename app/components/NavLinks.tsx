@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { navLinks } from "@/lib/links";
+import { serviceLinks } from "@/lib/links";
 
 export default function NavLinks() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +21,11 @@ export default function NavLinks() {
         variant={"ghost"}
         onClick={toggleMenu} // Toggle on click
         className="relative nav-link hover:text-blue-500"
+        asChild
       >
-        Services <ChevronDown />
+        <Link href={"/#services"}>
+          Services <ChevronDown />
+        </Link>
       </Button>
 
       {isOpen && (
@@ -32,11 +35,11 @@ export default function NavLinks() {
             ${isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"}
             origin-top`}
         >
-          {navLinks.map((link) => (
+          {serviceLinks.map((link) => (
             <Link
               href={link.href}
               key={link.id}
-              className="font-medium  hover:text-blue-500 transition-colors duration-150"
+              className="font-medium text-sm hover:text-blue-500 transition-colors duration-150"
             >
               {link.name}
             </Link>

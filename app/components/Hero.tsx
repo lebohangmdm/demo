@@ -11,9 +11,9 @@ const Hero = () => {
           src={hero}
           alt="Hero Background"
           layout="fill"
-          objectFit="cover"
-          objectPosition="center"
+          style={{ objectFit: "cover", objectPosition: "center" }}
           quality={90}
+          priority={true}
         />
       </div>
       <div

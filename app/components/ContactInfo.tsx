@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ContactInfo = () => {
   return (
-    <div className="flex flex-col justify-between">
+    <div className="flex flex-col gap-12 justify-between">
       <div className="flex flex-col gap-4">
         <h4 className="text-sm uppercase  font-semibold  md:text-base">
           Something you need
@@ -80,11 +80,11 @@ const ContactInfo = () => {
           Our Social Media
         </h4>
         <div className="flex items-center gap-4">
-          <div className="flex items-center justify-center h-8 w-8 bg-black rounded-full hover:bg-blue-500 transition duration-150">
+          <div className="flex items-center justify-center h-5 w-5 md:h-8 md:w-8 bg-black rounded-full hover:bg-blue-500 transition duration-150">
             <Facebook className="text-white" strokeWidth={1.5} stroke="white" />
           </div>
 
-          <div className="flex items-center justify-center h-8 w-8 bg-black rounded-md hover:bg-blue-500 transition duration-150">
+          <div className="flex items-center justify-center h-5 w-5 md:h-8 md:w-8 bg-black rounded-md hover:bg-blue-500 transition duration-150">
             <Linkedin className="text-white" strokeWidth={1.5} stroke="white" />
           </div>
         </div>

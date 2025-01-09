@@ -135,8 +135,8 @@ const services: Service[] = [
     ],
   },
   {
-    id: "new-motor",
-    title: "New Motor Manufacturing and Motor Upgrade",
+    id: "motor-manufacturing",
+    title: "Motor Manufacturing and Motor Upgrade",
     slug: "new-motor-manufacturing-and-motor-upgrade",
     image: img5,
     details:
@@ -154,11 +154,14 @@ const services: Service[] = [
       },
     ],
     keyPoints: [
-      { id: "1", point: "Special duty unique AC motors" },
-      { id: "2", point: "Special duty unique DC motors" },
-      { id: "3", point: "Low volumes produced" },
-      { id: "4", point: "All steel construction" },
-      { id: "5", point: "Designed and manufactured in SA" },
+      { id: "1", point: "Special duty unique AC and DC motors" },
+      { id: "2", point: "Low volumes produced" },
+      { id: "3", point: "All steel construction" },
+      { id: "4", point: "Designed and manufactured in SA" },
+      { id: "5", point: "Increased output from old style motors" },
+      { id: "6", point: "Improved enclosure protection" },
+      { id: "7", point: "Improved motor cooling and efficiency" },
+      { id: "8", point: "Improved insulation systems" },
     ],
   },
   {

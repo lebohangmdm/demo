@@ -1,6 +1,7 @@
 "use server";
 
 import { contactFormSchema } from "./formSchema";
+import { sendEmail } from "./sendEmail";
 import { ActionResponse, contactFormData } from "./types";
 
 export async function submitContact(
@@ -30,14 +31,23 @@ export async function submitContact(
       };
     }
 
+    const { email, message } = validatedData.data;
+
+    await sendEmail({
+      to: email,
+      subject: "Test your email via Mailtrap",
+      text: message,
+    });
+
     // Here you would typically save the address to your database
-    console.log("Address submitted:", validatedData.data);
+    console.log("email submitted:", validatedData.data);
 
     return {
       success: true,
       message: "Form submitted successfully!",
     };
   } catch (error) {
+    console.log(error);
     return {
       success: false,
       message: "An unexpected error occurred",

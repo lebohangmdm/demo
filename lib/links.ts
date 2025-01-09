@@ -9,17 +9,17 @@ export const navLinks: Link[] = [
   {
     id: "about",
     name: "About Us",
-    href: "/about-us",
+    href: "/#about-us",
   },
   {
     id: "services",
     name: "Services",
-    href: "/services",
+    href: "/#services",
   },
   {
     id: "why choose us",
     name: "Why Choose Us",
-    href: "/why-choose-us",
+    href: "/#why-choose-us",
   },
 ];
 
@@ -32,26 +32,26 @@ export const footerLinks: Link[] = [
   {
     id: "about",
     name: "About Us",
-    href: "/about-us",
+    href: "/#about-us",
   },
   {
     id: "services",
     name: "Services",
-    href: "/services",
+    href: "/#services",
   },
   {
     id: "why choose us",
     name: "Why Choose Us",
-    href: "/why-choose-us",
+    href: "/#why-choose-us",
   },
   {
     id: "contact",
     name: "Contact Us",
-    href: "/contact-us",
+    href: "/#contact",
   },
 ];
 
-export const FooterServiceLinks: Link[] = [
+export const serviceLinks: Link[] = [
   {
     id: "commutator",
     name: "Commutator",
@@ -65,7 +65,7 @@ export const FooterServiceLinks: Link[] = [
   {
     id: "electronic repairs",
     name: "Electronic Repairs",
-    href: "/electronic repairs",
+    href: "/electronic-repairs",
   },
   {
     id: "dc motor",
@@ -86,7 +86,7 @@ export const FooterServiceLinks: Link[] = [
   {
     id: "armature coils",
     name: "Armature Coils",
-    href: "/armature coils",
+    href: "/armature-coils",
   },
   {
     id: "services",

@@ -2,7 +2,7 @@ import { Factory, PhoneCall, Timer, Wrench } from "lucide-react";
 
 const Partner = () => {
   return (
-    <section className="section-container">
+    <section id="why-choose-us" className="section-container">
       <div className="flex flex-col gap-3">
         <h2 className="text-xl text-blue-500 font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
           Why Partner With Us
