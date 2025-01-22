@@ -32,3 +32,15 @@ export type Link = {
   name: string;
   href: string;
 };
+
+export type certificate = {
+  id: string;
+  name: string;
+  ref: string;
+  image: StaticImageData;
+};
+
+export type List = {
+  id: string;
+  description: string;
+};

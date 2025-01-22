@@ -5,9 +5,14 @@ import img4 from "@/public/images/ac-motor.jpg";
 import img5 from "@/public/images/new-motors.jpg";
 import img6 from "@/public/images/brush-holders.jpg";
 import img7 from "@/public/images/services.jpg";
-import img8 from "@/public/images/slip-ring (2).jpg";
+import img8 from "@/public/images/slipring.jpg";
 import img9 from "@/public/images/statorcoil1.jpg";
-import { Service } from "./types";
+
+import qualityImg from "@/public/images/sacas-quality.png";
+import safetyImg from "@/public/images/sacas-safety.png";
+import BEEImg from "@/public/images/BBBEE.png";
+import macsImg from "@/public/images/masc.png";
+import { certificate, List, Service } from "./types";
 
 const services: Service[] = [
   {
@@ -136,7 +141,7 @@ const services: Service[] = [
   },
   {
     id: "motor-manufacturing",
-    title: "Motor Manufacturing and Motor Upgrade",
+    title: "Motor Manufacturing & Upgrade",
     slug: "new-motor-manufacturing-and-motor-upgrade",
     image: img5,
     details:
@@ -270,6 +275,127 @@ const services: Service[] = [
       { id: "4", point: "Remove and reconnect motor" },
       { id: "5", point: "Motor selection assistance" },
     ],
+  },
+];
+
+export const certificates: certificate[] = [
+  {
+    id: "quality management",
+    name: "Quality ManageMent System (SACAS)",
+    ref: "ISO 9001",
+    image: qualityImg,
+  },
+  {
+    id: "healthy & safety",
+    name: "Occupational Healthy & Safety Management (SACAS) ",
+    ref: "ISO 45001",
+    image: safetyImg,
+  },
+  {
+    id: "BBBEE",
+    name: "BBBEE certificate (level 1 Contributer)",
+    ref: "BBBEE certificate (level 1)",
+    image: BEEImg,
+  },
+
+  {
+    id: "low voltage",
+    name: "Low voltate three phases induction motor (SANS)",
+    ref: "SANS 10242-1",
+    image: macsImg,
+  },
+  {
+    id: "non-spacking motor",
+    name: "Non-spacking motor (MACS)",
+    ref: "SANS 600079-14",
+    image: macsImg,
+  },
+  {
+    id: "flame-proof motor",
+    name: "Flame-proof Motor EX d (MACS)",
+    ref: "SANS 600079-1",
+    image: macsImg,
+  },
+];
+
+export const facilities: List[] = [
+  {
+    id: "1",
+    description: "Dyno & Regeneration load test",
+  },
+  {
+    id: "2",
+    description: "Mitchell electronics servo testing equipment",
+  },
+  {
+    id: "3",
+    description: "All test Pro winding analyzer",
+  },
+  {
+    id: "4",
+    description: "Field coil & Armature manufacturing equipment",
+  },
+  {
+    id: "5",
+    description: "Milling machines, presses, welding machine).",
+  },
+  {
+    id: "6",
+    description: "Surge & Core less testing",
+  },
+  {
+    id: "7",
+    description: "Fluke calibrated test equipment",
+  },
+  {
+    id: "8",
+    description: "High pressure AC and DC insulation testing",
+  },
+  {
+    id: "9",
+    description: "Baking and burn off ovens",
+  },
+  {
+    id: "11",
+    description: "Commutator spin seasoning machine",
+  },
+];
+
+export const additionalServices: List[] = [
+  {
+    id: "1",
+    description: "24 Hour breakdown services",
+  },
+  {
+    id: "2",
+    description: "Delivery/ collection services",
+  },
+  {
+    id: "3",
+    description: "Test reports ",
+  },
+  {
+    id: "4",
+    description: "Free technical assistance",
+  },
+  {
+    id: "5",
+    description: "On-site inspection",
+  },
+];
+
+export const ranges: List[] = [
+  {
+    id: "1",
+    description: "0-1100 volts AC",
+  },
+  {
+    id: "2",
+    description: "0-600 volts DC",
+  },
+  {
+    id: "3",
+    description: "0-300 amps",
   },
 ];
 

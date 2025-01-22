@@ -9,17 +9,35 @@ export const navLinks: Link[] = [
   {
     id: "about",
     name: "About Us",
-    href: "/#about-us",
+    href: "/about-us",
   },
   {
     id: "services",
     name: "Services",
-    href: "/#services",
+    href: "/services",
   },
   {
-    id: "why choose us",
-    name: "Why Choose Us",
-    href: "/#why-choose-us",
+    id: "contact",
+    name: "Contact Us",
+    href: "/contact-us",
+  },
+];
+
+export const companyLinks: Link[] = [
+  {
+    id: "about",
+    name: "About Us",
+    href: "/about-us",
+  },
+  {
+    id: "certificates",
+    name: "Certificates",
+    href: "/certificates",
+  },
+  {
+    id: "quality",
+    name: "Quality",
+    href: "/quality",
   },
 ];
 
@@ -32,22 +50,22 @@ export const footerLinks: Link[] = [
   {
     id: "about",
     name: "About Us",
-    href: "/#about-us",
+    href: "/about-us",
   },
   {
     id: "services",
     name: "Services",
-    href: "/#services",
+    href: "/services",
   },
   {
-    id: "why choose us",
-    name: "Why Choose Us",
-    href: "/#why-choose-us",
+    id: "certificates",
+    name: "Certificates",
+    href: "/certificates",
   },
   {
     id: "contact",
     name: "Contact Us",
-    href: "/#contact",
+    href: "/contact-us",
   },
 ];
 
