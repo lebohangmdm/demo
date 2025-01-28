@@ -20,7 +20,7 @@ const ContactInfo = () => {
           Contact Information
         </h4>
         <ul className="flex flex-col gap-2">
-          <li className="space-x-2 group">
+          <li className="space-x-2 group text-sm md:text-base">
             <span>
               <PhoneCall
                 className="w-4 h-4 inline group-hover:text-blue-500"
@@ -32,7 +32,7 @@ const ContactInfo = () => {
             <span> || </span>{" "}
             <Link href={"tel:+27835214412"}>+27 83 521 4412</Link>
           </li>
-          <li className="space-x-2 group">
+          <li className="space-x-2 group text-sm md:text-base">
             <span>
               <Mail
                 className="w-4 h-4 inline group-hover:text-blue-500"
@@ -45,7 +45,7 @@ const ContactInfo = () => {
             <Link href={"mailto:email@example"}>jim@gmail.com</Link>
           </li>
 
-          <li className="space-x-2 group">
+          <li className="space-x-2 group text-sm md:text-base">
             <span>
               <Home
                 className="w-4 h-4 inline group-hover:text-blue-500"
@@ -63,7 +63,7 @@ const ContactInfo = () => {
               Address: 2164 Albertina Sisulu Road Industria, Johannesburg
             </Link>
           </li>
-          <li className="space-x-2 group">
+          <li className="space-x-2 group text-sm md:text-base">
             <span>
               <Timer
                 className="w-4 h-4 inline group-hover:text-blue-500 "
@@ -80,11 +80,11 @@ const ContactInfo = () => {
           Our Social Media
         </h4>
         <div className="flex items-center gap-4">
-          <div className="flex items-center justify-center h-5 w-5 md:h-8 md:w-8 bg-black rounded-full hover:bg-blue-500 transition duration-150">
+          <div className="flex items-center justify-center h-6 w-6 md:h-8 md:w-8 bg-black rounded-full hover:bg-blue-500 transition duration-150">
             <Facebook className="text-white" strokeWidth={1.5} stroke="white" />
           </div>
 
-          <div className="flex items-center justify-center h-5 w-5 md:h-8 md:w-8 bg-black rounded-md hover:bg-blue-500 transition duration-150">
+          <div className="flex items-center justify-center h-6 w-6 md:h-8 md:w-8 bg-black rounded-md hover:bg-blue-500 transition duration-150">
             <Linkedin className="text-white" strokeWidth={1.5} stroke="white" />
           </div>
         </div>

@@ -36,12 +36,12 @@ function ContactForm() {
                   id="fullName"
                   type="text"
                   name="fullName"
-                  placeholder="john Doe"
+                  placeholder="Full name"
                   defaultValue={state.inputs?.fullName}
                   required
                   className={`${
                     state.errors?.fullName ? "border-red-500" : ""
-                  } bg-slate-200 rounded-sm `}
+                  }  rounded-sm `}
                 />
                 {state.errors?.fullName && (
                   <p className="text-red-500 text-sm mt-1">
@@ -55,12 +55,12 @@ function ContactForm() {
                   id="email"
                   type="email"
                   name="email"
-                  placeholder="john@example.com"
+                  placeholder="Email"
                   required
                   defaultValue={state.inputs?.email}
                   className={`${
                     state.errors?.email ? "border-red-500" : ""
-                  } bg-slate-200 rounded-sm `}
+                  }  rounded-sm `}
                 />
                 {state.errors?.email && (
                   <p className="text-red-500 text-sm mt-1">
@@ -75,12 +75,12 @@ function ContactForm() {
                   id="phone"
                   type="tel"
                   name="phone"
-                  placeholder="+27 83 521 6789"
+                  placeholder="Contact number"
                   defaultValue={state.inputs?.phone}
                   required
                   className={`${
                     state.errors?.phone ? "border-red-500" : ""
-                  } bg-slate-200 rounded-sm `}
+                  }  rounded-sm `}
                 />
                 {state.errors?.phone && (
                   <p className="text-red-500 text-sm mt-1">
@@ -95,12 +95,12 @@ function ContactForm() {
                   id="company"
                   type="text"
                   name="company"
-                  placeholder="Acme Inc."
+                  placeholder="Company"
                   defaultValue={state.inputs?.company}
                   required
                   className={`${
                     state.errors?.company ? "border-red-500" : ""
-                  } bg-slate-200 rounded-sm `}
+                  }  rounded-sm `}
                 />
                 {state.errors?.company && (
                   <p className="text-red-500 text-sm mt-1">
@@ -119,7 +119,7 @@ function ContactForm() {
                   required
                   className={`${
                     state.errors?.message ? "border-red-500" : ""
-                  } bg-slate-200 rounded-sm `}
+                  }  rounded-sm `}
                 />
                 {state.errors?.message && (
                   <p className="text-red-500 text-sm mt-1">

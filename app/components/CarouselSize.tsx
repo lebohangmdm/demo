@@ -57,13 +57,13 @@ function CarouselSize() {
       opts={{
         align: "start",
       }}
-      className="w-full"
+      className="w-full overflow-hidden"
     >
       <CarouselContent>
         {logos.map((logo) => (
           <CarouselItem
             key={logo.name}
-            className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5"
+            className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 shrink-0"
           >
             <div className="p-1">
               <Card className="border-none shadow-none">
@@ -81,8 +81,8 @@ function CarouselSize() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="hover:bg-blue-500 hover:text-white transition-all duration-200 h-8 w-8" />
-      <CarouselNext className="hover:bg-blue-500 hover:text-white transition-all duration-200 h-8 w-8" />
+      <CarouselPrevious className="hidden sm:flex absolute top-1/2 left-2 hover:bg-blue-500 hover:text-white  transition-all duration-200 h-8 w-8 lg:h-10 lg:w-10" />
+      <CarouselNext className="hidden sm:flex absolute top-1/2 right-2 hover:bg-blue-500 hover:text-white  transition-all duration-200 h-8 w-8 lg:h-10 lg:w-10" />
     </Carousel>
   );
 }
