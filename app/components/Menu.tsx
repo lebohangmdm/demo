@@ -14,7 +14,7 @@ const Menu = () => {
       <Button
         variant={"default"}
         size={"icon"}
-        className="bg-blue-500 text-white p-2"
+        className="bg-blue-500 text-white rounded-none"
         onClick={() => setShowMenu(!showMenu)}
       >
         {showMenu ? <X size={24} /> : <MenuIcon size={24} />}
