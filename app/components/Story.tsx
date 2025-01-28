@@ -7,7 +7,7 @@ import { MoveRight } from "lucide-react";
 
 const Story = () => {
   return (
-    <section className="section-container py-12 md:py-14 lg:py-16">
+    <section className="section-container">
       <div className="mt-4 grid gap-12 md:gap-14 lg:grid-cols-[60%_40%]">
         <div className="space-y-8 ">
           <h2 className="text-xl text-blue-500 capitalize font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
@@ -33,11 +33,11 @@ const Story = () => {
 
           <Button
             variant={"default"}
-            className=" rounded-none py-2 px-4 text-base   lg:py-4 lg:px-6 lg:text-lg font-semibold tracking-wider  hover:bg-black  transition-all duration-200 "
+            className=" rounded-none py-2 px-4 text-base h-10  lg:h-12 lg:py-4 lg:px-6 lg:text-lg font-semibold tracking-wider  hover:bg-black  transition-all duration-200 "
             size={"lg"}
             asChild
           >
-            <Link href={"#contact"}>
+            <Link href={"/about-us"}>
               More About Us <MoveRight />
             </Link>
           </Button>

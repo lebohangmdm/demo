@@ -6,10 +6,7 @@ import { additionalServices, facilities, ranges } from "@/lib/data";
 
 const page = () => {
   return (
-    <section
-      id="about-us"
-      className="section-container  py-12 md:py-14 lg:py-16"
-    >
+    <section className="section-container  py-12 md:py-14 lg:py-16">
       <div className="mt-4 md:mt-6 grid gap-12  md:gap-14 md:grid-cols-[1.5fr_1fr] lg:gap-16 xl:grid-cols-2">
         <div className="w-full flex flex-col gap-4 ">
           <h2 className="text-xl text-blue-500 font-semibold sm:text-2xl md:text-3xl lg:text-4xl">

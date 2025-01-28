@@ -8,11 +8,11 @@
   }
 
   .main-container {
-    @apply max-w-6xl mx-auto px-4 md:px-8;
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
   .section-container {
-    @apply max-w-6xl mx-auto py-12 px-4 md:py-16 md:px-8 lg:py-20;
+    @apply max-w-6xl mx-auto py-12 px-4 sm:px-6 md:py-16 lg:px-8 lg:py-20;
   }
 
   .footer-link {
@@ -22,20 +22,6 @@
 
 .word-spacing {
   word-spacing: 4px;
-}
-
-.hero {
-  background-image: linear-gradient(
-      to bottom right,
-      rgba(59, 131, 246, 0.3),
-      rgba(59, 131, 246, 0.3)
-    ),
-    url("/images/hero.jpg");
-  height: calc(100dvh - 24px);
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 @layer base {

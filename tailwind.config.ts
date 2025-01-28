@@ -20,7 +20,12 @@ export default {
           "Arial",
         ],
       },
-
+      padding: {
+        "shift-left": "calc((100vw - 1088px) / 2)",
+      },
+      margin: {
+        "margin-shift-left": "calc((100vw - 1088px) / 2)",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

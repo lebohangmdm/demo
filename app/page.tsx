@@ -1,15 +1,15 @@
 import Hero from "@/app/components/Hero";
-import About from "@/app/components/About";
 import Services from "@/app/components/Services";
 import Partner from "@/app/components/Partner";
 import Contact from "@/app/components/Contact";
 import Featured from "@/app/components/Featured";
+import Story from "@/app/components/Story";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <About />
+      <Story />
       <Services />
       <Partner />
       <Contact />
