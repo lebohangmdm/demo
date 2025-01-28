@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="relative main-container h-14 sm:h-16 lg:h-20">
       <div className="flex items-center justify-between">
-        <Logo width={200} height={200} />
+        <Logo width={250} height={250} />
         <div className="hidden lg:flex items-center lg:gap-8 xl:gap-10">
           <CompanyNavLink />
           <ServicesNavLinks />

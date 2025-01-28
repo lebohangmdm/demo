@@ -9,6 +9,10 @@ import { useState } from "react";
 const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);
 
+  const handleClose = () => {
+    setShowMenu(false);
+  };
+
   return (
     <div className="block z-30 lg:hidden">
       <Button
@@ -37,7 +41,8 @@ const Menu = () => {
               <li key={link.id} className="w-full">
                 <Link
                   href={link.href}
-                  className="block py-4 text-base cursor-pointer font-medium uppercase hover:text-blue-600 transition-all duration-150"
+                  className="block py-4 text-sm md:text-base cursor-pointer font-medium uppercase hover:text-blue-600 transition-all duration-150"
+                  onClick={handleClose}
                 >
                   {link.name}
                 </Link>
