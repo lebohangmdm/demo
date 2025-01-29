@@ -14,7 +14,7 @@ export const navLinks: Link[] = [
   {
     id: "services",
     name: "Services",
-    href: "/services",
+    href: "/our-services",
   },
   {
     id: "contact",
@@ -55,7 +55,7 @@ export const footerLinks: Link[] = [
   {
     id: "services",
     name: "Services",
-    href: "/services",
+    href: "/our-services",
   },
   {
     id: "certificates",

@@ -81,8 +81,8 @@ function CarouselSize() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="hidden sm:flex absolute top-1/2 left-2 hover:bg-blue-500 hover:text-white  transition-all duration-200 h-8 w-8 lg:h-10 lg:w-10" />
-      <CarouselNext className="hidden sm:flex absolute top-1/2 right-2 hover:bg-blue-500 hover:text-white  transition-all duration-200 h-8 w-8 lg:h-10 lg:w-10" />
+      <CarouselPrevious className="hidden sm:flex bg-transparent absolute top-1/2 left-2 hover:bg-blue-500 hover:text-white  transition-all duration-200 h-8 w-8 lg:h-10 lg:w-10" />
+      <CarouselNext className="hidden sm:flex bg-transparent absolute top-1/2 right-2 hover:bg-blue-500 hover:text-white  transition-all duration-200 h-8 w-8 lg:h-10 lg:w-10" />
     </Carousel>
   );
 }

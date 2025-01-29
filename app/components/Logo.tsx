@@ -17,7 +17,6 @@ const Logo = ({
         style={{ objectFit: "cover" }}
         width={width}
         height={height}
-        className="-ml-4"
       />
     </Link>
   );

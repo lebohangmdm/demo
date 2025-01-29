@@ -23,7 +23,7 @@ export default function ServicesNavLinks() {
         className="relative nav-link hover:text-blue-500"
         asChild
       >
-        <Link href={"/services"}>
+        <Link href={"/our-services"}>
           Services <ChevronDown />
         </Link>
       </Button>

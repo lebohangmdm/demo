@@ -17,10 +17,10 @@ const Footer = () => {
     <footer className="bg-primary-foreground">
       <div className="section-container">
         <div className="grid grid-cols-2  lg:grid-cols-[1.5fr_1fr_1fr_1.5fr] gap-x-4 sm:gap-x-8 gap-y-8  md:gap-10 lg:gap-12 ">
-          <div className="space-y-2 md:space-y-4 order-3 lg:order-1">
-            <Logo width={400} height={400} />
+          <div className="space-y-2 md:space-y-4 lg:space-y-8 order-3 lg:order-1">
+            <Logo width={250} height={250} />
 
-            <div className="flex flex-col justify-between gap-6 md:gap-8">
+            <div className="flex flex-col justify-between gap-6 md:gap-8 lg:gap-10">
               <p className="text-sm md:text-base">
                 Nisida is a level 1 BEE rated company based in Industria
                 Johannesburg.
@@ -74,7 +74,7 @@ const Footer = () => {
             <div className="flex flex-col gap-6 md:gap-8">
               <div className="flex items-start space-x-2 group">
                 <MapPin
-                  className="w-5 h-5 inline group-hover:text-blue-500"
+                  className="w-6 h-6 lg:w-8 lg:h-8 inline group-hover:text-blue-500"
                   strokeWidth={2.5}
                 />
                 <Link
@@ -93,7 +93,7 @@ const Footer = () => {
                 <li className="space-x-2 group list-none">
                   <span>
                     <PhoneCall
-                      className="w-4 h-4 inline group-hover:text-blue-500"
+                      className="w-4 h-4 inline lg:w-5 lg:h-5 group-hover:text-blue-500"
                       strokeWidth={2.5}
                     />
                   </span>
@@ -107,7 +107,7 @@ const Footer = () => {
                 <li className="space-x-2 group list-none">
                   <span>
                     <PhoneCall
-                      className="w-4 h-4 inline group-hover:text-blue-500"
+                      className="w-4 h-4 lg:w-5 lg:h-5 inline group-hover:text-blue-500"
                       strokeWidth={2.5}
                     />
                   </span>
@@ -122,7 +122,7 @@ const Footer = () => {
                 <li className="space-x-2 group list-none">
                   <span>
                     <Mail
-                      className="w-4 h-4 inline group-hover:text-blue-500"
+                      className="w-4 h-4 lg:w-5 lg:h-5 inline group-hover:text-blue-500"
                       strokeWidth={2.5}
                     />
                   </span>
@@ -137,7 +137,7 @@ const Footer = () => {
                 <li className="space-x-2 group list-none">
                   <span>
                     <Mail
-                      className="w-4 h-4 inline group-hover:text-blue-500"
+                      className="w-4 h-4 lg:w-5 lg:h-5 inline group-hover:text-blue-500"
                       strokeWidth={2.5}
                     />
                   </span>

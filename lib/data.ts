@@ -64,17 +64,15 @@ const services: Service[] = [
     keyPoints: [
       {
         id: "1",
-        point:
-          "We repair standard AC motors, Crane motors, Lift motors, and Alternators",
+        point: "We repair standard motors from AC, Crane, Lift and Alternators",
       },
+      { id: "2", point: "Computer aided and winding design" },
+      { id: "3", point: "24 hour breakdown services 7 days a week" },
+      { id: "4", point: "Collection and delivery services" },
       {
-        id: "2",
-        point:
-          "Our services include full load test facilities, Core loss testing, surge testing",
+        id: "5",
+        point: "Our services: full load testing, core loss and surge testing.",
       },
-      { id: "3", point: "Computer aided and winding design" },
-      { id: "4", point: "24 hour breakdown services 7 days a week" },
-      { id: "5", point: "Collection and delivery services" },
     ],
   },
   {
@@ -126,13 +124,11 @@ const services: Service[] = [
     keyPoints: [
       {
         id: "1",
-        point:
-          "We repair standard AC motors, Crane motors, Lift motors, and Alternators",
+        point: "We repair standard motors from AC, Crane, Lift and Alternators",
       },
       {
         id: "2",
-        point:
-          "Our services include full load test facilities, Core loss testing, surge testing",
+        point: "Our services: full load testing, core loss and surge testing.",
       },
       { id: "3", point: "Computer aided and winding design" },
       { id: "4", point: "24 hour breakdown services 7 days a week" },
