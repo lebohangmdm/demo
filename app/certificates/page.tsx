@@ -1,9 +1,10 @@
 import { certificates } from "@/lib/data";
 import CertificateCard from "../components/CertificateCard";
+import SectionWrapper from "../components/SectionWrapper";
 
 const page = () => {
   return (
-    <section className="section-container">
+    <SectionWrapper>
       <div className="flex flex-col gap-6">
         <div>
           <h3 className="text-lg text-blue-500 font-semibold sm:text-xl md:text-2xl lg:text-3xl">
@@ -30,7 +31,7 @@ const page = () => {
           </div>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 

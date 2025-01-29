@@ -3,10 +3,11 @@ import React from "react";
 import img from "@/public/images/about.jpg";
 import { CircleCheckBig } from "lucide-react";
 import { additionalServices, facilities, ranges } from "@/lib/data";
+import SectionWrapper from "../components/SectionWrapper";
 
 const page = () => {
   return (
-    <section className="section-container  py-12 md:py-14 lg:py-16">
+    <SectionWrapper delay={0.3}>
       <div className="mt-4 md:mt-6 grid gap-12  md:gap-14 md:grid-cols-[1.5fr_1fr] lg:gap-16 xl:grid-cols-2">
         <div className="w-full flex flex-col gap-4 ">
           <h2 className="text-xl text-blue-500 font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
@@ -92,7 +93,7 @@ const page = () => {
           </div>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 
