@@ -5,6 +5,32 @@ import { CircleCheckBig } from "lucide-react";
 import { additionalServices, facilities, ranges } from "@/lib/data";
 import SectionWrapper from "../components/SectionWrapper";
 
+import type { Metadata } from "next";
+const aboutUrl =
+  "https://lhebnpqypzctccgh.public.blob.vercel-storage.com/about.jpg";
+
+export const metadata: Metadata = {
+  title: "Nisida Industries | About Us",
+  description:
+    "Nisida, a Level 1 BEE-rated company based in Industria, Johannesburg, specializes in AC and DC motor repairs, servo and stepper motsor repairs, and custom motor design and manufacturing",
+  openGraph: {
+    title: "Nisida Industries | About Us",
+    description:
+      "Nisida, a Level 1 BEE-rated company based in Industria, Johannesburg, specializes in AC and DC motor repairs, servo and stepper motsor repairs, and custom motor design and manufacturing",
+    url: `https://nisidaa/certificates`,
+    type: "article",
+    siteName: "Nisida Industries",
+    images: [
+      {
+        url: aboutUrl,
+        width: 1200,
+        height: 630,
+        alt: "about-us",
+      },
+    ],
+  },
+};
+
 const page = () => {
   return (
     <SectionWrapper delay={0.3}>
@@ -27,7 +53,7 @@ const page = () => {
         </div>
         <div className="">
           <Image
-            src={img}
+            src={img || aboutUrl}
             alt="about-img"
             style={{ objectFit: "cover" }}
             className="object-cover h-52 md:h-full mx-auto"

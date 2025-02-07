@@ -2,11 +2,11 @@ import img1 from "@/public/images/commutator.jpg";
 import img2 from "@/public/images/dc-motor.jpg";
 import img3 from "@/public/images/electronic-repairs.jpg";
 import img4 from "@/public/images/ac-motor.jpg";
-import img5 from "@/public/images/new-motors.jpg";
+import img5 from "@/public/images/new-motor-manufacturing-and-motor-upgrade.jpg";
 import img6 from "@/public/images/brush-holders.jpg";
 import img7 from "@/public/images/services.jpg";
 import img8 from "@/public/images/slipring.jpg";
-import img9 from "@/public/images/statorcoil1.jpg";
+import img9 from "@/public/images/armature-coils.jpg";
 
 import qualityImg from "@/public/images/sacas-quality.png";
 import safetyImg from "@/public/images/sacas-safety.png";

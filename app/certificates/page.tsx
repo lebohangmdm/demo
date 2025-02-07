@@ -2,6 +2,33 @@ import { certificates } from "@/lib/data";
 import CertificateCard from "../components/CertificateCard";
 import SectionWrapper from "../components/SectionWrapper";
 
+import type { Metadata } from "next";
+
+const certificateUrl =
+  "https://lhebnpqypzctccgh.public.blob.vercel-storage.com/BBBEE.png";
+
+export const metadata: Metadata = {
+  title: "Nisida Industries | Certificates",
+  description:
+    "Nisida Industries has the full range of qualifications and certifications to guarantee a high-quality, reliable working relationship.",
+  openGraph: {
+    title: "Nisida Industries | Certificates",
+    description:
+      "Nisida Industries has the full range of qualifications and certifications to guarantee a high-quality, reliable working relationship.",
+    url: `https://nisidaa/certificates`,
+    type: "article",
+    siteName: "Nisida Industries",
+    images: [
+      {
+        url: certificateUrl,
+        width: 1200,
+        height: 630,
+        alt: "certificates",
+      },
+    ],
+  },
+};
+
 const page = () => {
   return (
     <SectionWrapper>
