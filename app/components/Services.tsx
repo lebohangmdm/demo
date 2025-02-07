@@ -1,6 +1,6 @@
 import { ServiceCard } from "@/app/components/ServiceCard";
 import { getServices } from "@/lib/data";
-import SectionWrapper from "./SectionWrapper";
+import SectionWrapper from "@/app/components/SectionWrapper";
 
 const Services = async () => {
   const services = await getServices();

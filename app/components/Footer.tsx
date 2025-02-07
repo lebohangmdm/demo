@@ -14,7 +14,7 @@ import Logo from "@/app/components/Logo";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-foreground">
+    <footer className="bg-primary-foreground dark:bg-foreground ">
       <div className="section-container">
         <div className="grid grid-cols-2  lg:grid-cols-[1.5fr_1fr_1fr_1.5fr] gap-x-4 sm:gap-x-8 gap-y-8  md:gap-10 lg:gap-12 ">
           <div className="space-y-2 md:space-y-4 lg:space-y-8 order-3 lg:order-1">

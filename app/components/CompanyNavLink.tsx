@@ -20,14 +20,14 @@ const CompanyNavLink = () => {
       <Button
         variant={"ghost"}
         onClick={toggleMenu} // Toggle on click
-        className="relative nav-link hover:text-blue-500"
+        className="relative nav-link hover:text-blue-500 dark:bg-foreground "
       >
         Company <ChevronDown />
       </Button>
 
       {isOpen && (
         <ul
-          className={`absolute bg-white flex flex-col gap-2.5 w-[250px] p-4 shadow-lg 
+          className={`absolute bg-white flex flex-col gap-2.5 w-[250px] dark:bg-foreground  p-4  shadow-lg 
             transition-all duration-300 ease-in-out 
             ${isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"}
             origin-top`}

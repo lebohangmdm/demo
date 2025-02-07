@@ -10,15 +10,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: [
-          "Inter",
-          "system-ui", // System UI font
-          "-apple-system", // macOS/iOS
-          "BlinkMacSystemFont", // macOS/Chrome
-          "Segoe UI", // Windows
-          "Roboto", // Android/Chrome
-          "Arial",
-        ],
+        inter: ["var(--font-inter)", "sans-serif"],
+        roboto: ["var(--font-roboto)", "sans-serif"],
+        default: ["system-ui", "sans-serif"], // Fallback system font
       },
       padding: {
         "shift-left": "calc((100vw - 1088px) / 2)",

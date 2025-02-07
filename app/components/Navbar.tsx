@@ -16,7 +16,7 @@ const Navbar = () => {
           <ServicesNavLinks />
           <Button
             variant={"default"}
-            className="py-4 px-4 font-semibold hover:bg-black rounded-none  transition-all duration-200 "
+            className="py-4 px-4 font-semibold hover:bg-black rounded-none transition-all duration-200 "
             size={"lg"}
             asChild
           >

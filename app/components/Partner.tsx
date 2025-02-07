@@ -1,8 +1,9 @@
 import { Factory, PhoneCall, Timer, Wrench } from "lucide-react";
+import SectionWrapper from "@/app/components/SectionWrapper";
 
 const Partner = () => {
   return (
-    <section className="section-container">
+    <SectionWrapper>
       <div className="flex flex-col gap-3">
         <h2 className="text-xl text-blue-500 font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
           Why Partner With Us
@@ -64,7 +65,7 @@ const Partner = () => {
           </p>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 

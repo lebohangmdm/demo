@@ -34,11 +34,6 @@ export const companyLinks: Link[] = [
     name: "Certificates",
     href: "/certificates",
   },
-  {
-    id: "quality",
-    name: "Quality",
-    href: "/quality",
-  },
 ];
 
 export const footerLinks: Link[] = [

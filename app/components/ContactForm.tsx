@@ -26,7 +26,7 @@ function ContactForm() {
       <h3 className="text-lg text-blue-500 font-semibold sm:text-xl md:text-2xl lg:text-3xl">
         Talk to us!
       </h3>
-      <Card className="shadow-none border-none space-y-4">
+      <Card className="shadow-none border-none space-y-4 dark:bg-foreground">
         <CardContent className="p-0">
           <form action={action} className="space-y-4">
             <div className="grid w-full items-center gap-4">

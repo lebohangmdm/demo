@@ -13,7 +13,7 @@ interface SectionWrapperProps {
 const variants: Variants = {
   hidden: {
     opacity: 0,
-    y: 30,
+    y: 50,
   },
   visible: {
     opacity: 1,
@@ -28,7 +28,7 @@ const variants: Variants = {
 const SectionWrapper = ({
   children,
   className = "",
-  delay = 0.3,
+  delay = 0.5,
 }: SectionWrapperProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });

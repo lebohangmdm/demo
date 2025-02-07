@@ -27,7 +27,7 @@ export function ServiceCard({
 }) {
   return (
     <Card
-      className={`max-w-[350px] bg-[#fefefe] rounded-none rounded-b-md  overflow-hidden ${className}`}
+      className={`max-w-[350px] bg-[#fefefe] dark:bg-black dark:border-foreground rounded-none rounded-b-md  overflow-hidden ${className}`}
     >
       <Image
         src={image}

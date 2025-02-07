@@ -4,10 +4,11 @@ import img from "@/public/images/Picture4-1.jpg";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
+import SectionWrapper from "@/app/components/SectionWrapper";
 
 const Story = () => {
   return (
-    <section className="section-container">
+    <SectionWrapper>
       <div className="mt-4 grid gap-12 md:gap-14 lg:grid-cols-[60%_40%]">
         <div className="space-y-8 ">
           <h2 className="text-xl text-blue-500 capitalize font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
@@ -52,7 +53,7 @@ const Story = () => {
           />
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 

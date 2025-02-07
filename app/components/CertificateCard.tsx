@@ -10,7 +10,7 @@ interface PageProps {
 
 const CertificateCard = ({ certificate }: { certificate: PageProps }) => {
   return (
-    <div className="py-5 px-4 overflow-hidden space-y-3 border border-slate-200 hover:shadow-lg transition-transform duration-300 hover:scale-105">
+    <div className="py-5 px-4 overflow-hidden space-y-3 border border-slate-200 hover:shadow-lg transition-transform duration-300 hover:scale-105 dark:border-foreground ">
       <Image
         src={certificate.image}
         alt={certificate.name}

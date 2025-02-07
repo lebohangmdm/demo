@@ -1,16 +1,13 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-  async redirects() {
-    return [
+const nextConfig = {
+  images: {
+    remotePatterns: [
       {
-        source: "/about-us#:slug*",
-        destination: "/about-us",
-        permanent: true,
+        protocol: "https",
+        hostname: "lhebnpqypzctccgh.public.blob.vercel-storage.com",
+        port: "",
+        pathname: "/**",
       },
-    ];
+    ],
   },
 };
-
 export default nextConfig;
