@@ -20,7 +20,7 @@ const ContactInfo = () => {
           Contact Information
         </h4>
         <ul className="flex flex-col gap-2">
-          <li className="space-x-2 group text-sm md:text-base">
+          <li className="space-x-2 group text-xs sm:text-sm md:text-base">
             <span>
               <PhoneCall
                 className="w-4 h-4 inline group-hover:text-blue-500"
@@ -32,7 +32,7 @@ const ContactInfo = () => {
             <span> || </span>{" "}
             <Link href={"tel:+27835214412"}>+27 83 521 4412</Link>
           </li>
-          <li className="space-x-2 group text-sm md:text-base">
+          <li className="space-x-2 group text-xs sm:text-sm md:text-base">
             <span>
               <Mail
                 className="w-4 h-4 inline group-hover:text-blue-500"
@@ -45,7 +45,7 @@ const ContactInfo = () => {
             <Link href={"mailto:email@example"}>jim@gmail.com</Link>
           </li>
 
-          <li className="space-x-2 group text-sm md:text-base">
+          <li className="space-x-2 group text-xs sm:text-sm md:text-base">
             <span>
               <Home
                 className="w-4 h-4 inline group-hover:text-blue-500"
@@ -58,19 +58,21 @@ const ContactInfo = () => {
               }
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium "
+              className="font-semibold"
             >
               Address: 2164 Albertina Sisulu Road Industria, Johannesburg
             </Link>
           </li>
-          <li className="space-x-2 group text-sm md:text-base">
+          <li className="space-x-2 group text-xs sm:text-sm md:text-base">
             <span>
               <Timer
                 className="w-4 h-4 inline group-hover:text-blue-500 "
                 strokeWidth={2.5}
               />
             </span>
-            <span className="font-medium">Days: 7:30 AM–4:30 PM (Mon–Fri)</span>
+            <span className="font-semibold">
+              Days: 7:30 AM–4:30 PM (Mon–Fri)
+            </span>
           </li>
         </ul>
       </div>

@@ -25,7 +25,7 @@ const Menu = () => {
       </Button>
       <div
         className={`
-          absolute top-full left-0 w-full bg-white shadow-lg rounded-md 
+          absolute top-full left-0 w-full bg-background  dark:bg-dark-background shadow-lg rounded-md 
           origin-top transform transition-all duration-500 ease-out
           ${
             showMenu

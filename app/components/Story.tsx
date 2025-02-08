@@ -16,7 +16,7 @@ const Story = () => {
           </h2>
           <div className="space-y-4 max-w-xl  md:max-w-3xl  text-sm leading-6 md:text-base ">
             <p>
-              As a trusted industry leader, Renown is dedicated to meeting the
+              As a trusted industry leader, Nisida is dedicated to meeting the
               specific needs of many corporations like yours with our top-notch
               motor and generator services. Whether it’s expert repairs,
               thorough maintenance, or providing new motors, we tailor our
@@ -25,8 +25,8 @@ const Story = () => {
             <p>
               From small to large electrical rotating equipment, we guarantee a
               seamless experience for your operations. No matter how big or
-              complex the task, Renown is committed to delivering unmatched
-              service with precision and care. Choose Renown as your reliable
+              complex the task, Nisida is committed to delivering unmatched
+              service with precision and care. Choose Nisida as your reliable
               partner and experience the peace of mind and operational
               efficiency that comes with our industry expertise.
             </p>

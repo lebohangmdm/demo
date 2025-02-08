@@ -18,7 +18,7 @@ const ContactNav = () => {
           className="flex items-center gap-1 text-xs md:text-sm font-semibold group"
         >
           <Mail className="w-4 h-4 md:w-5 md:h-5 group-hover:text-blue-500 " />{" "}
-          sales@mailcoil.com
+          sales@nisida.com
         </Link>
       </div>
     </div>

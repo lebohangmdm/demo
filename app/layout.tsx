@@ -3,7 +3,7 @@ import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
-import { ThemeProvider } from "@/app/components/ThemeProvider";
+import { ThemeProvider } from "./components/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -54,7 +54,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full scroll-smooth">
       <body
-        className={`${roboto.variable}  ${inter.variable}  antialiased overflow-x-hidden`}
+        className={`${roboto.variable}  ${inter.variable} bg-background dark:bg-dark-background  antialiased overflow-x-hidden`}
       >
         <ThemeProvider
           attribute="class"

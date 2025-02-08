@@ -20,7 +20,7 @@ export default function ServicesNavLinks() {
       <Button
         variant={"ghost"}
         onClick={toggleMenu} // Toggle on click
-        className="relative nav-link hover:text-blue-500 dark:bg-foreground"
+        className="relative hover:bg-transparent nav-link hover:text-blue-500 dark:bg-foreground"
         asChild
       >
         <Link href={"/our-services"}>
