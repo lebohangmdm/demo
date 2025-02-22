@@ -16,7 +16,7 @@
   }
 
   .footer-link {
-    @apply inline-flex items-center gap-1 text-sm md:text-base  hover:text-blue-500 transition-all duration-150 ease-in-out;
+    @apply inline-flex items-center gap-1 text-xs sm:text-sm md:text-base  hover:text-blue-500 transition-all duration-150 ease-in-out;
   }
 }
 
@@ -32,7 +32,7 @@ body {
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: #020817;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;

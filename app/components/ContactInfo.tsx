@@ -58,7 +58,7 @@ const ContactInfo = () => {
               }
               target="_blank"
               rel="noopener noreferrer"
-              className="font-semibold"
+              className="font-medium"
             >
               Address: 2164 Albertina Sisulu Road Industria, Johannesburg
             </Link>
@@ -70,9 +70,7 @@ const ContactInfo = () => {
                 strokeWidth={2.5}
               />
             </span>
-            <span className="font-semibold">
-              Days: 7:30 AM–4:30 PM (Mon–Fri)
-            </span>
+            <span className="font-medium">Days: 7:30 AM–4:30 PM (Mon–Fri)</span>
           </li>
         </ul>
       </div>
