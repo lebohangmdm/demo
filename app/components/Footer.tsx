@@ -16,23 +16,23 @@ const Footer = () => {
   return (
     <footer className="bg-primary-foreground dark:bg-foreground ">
       <div className="section-container">
-        <div className="grid grid-cols-2  lg:grid-cols-[1.5fr_1fr_1fr_1.5fr] gap-x-4 sm:gap-x-8 gap-y-8  md:gap-10 lg:gap-12 ">
+        <div className="grid grid-cols-2  lg:grid-cols-[1.5fr_1fr_1fr_1.5fr] gap-x-6 sm:gap-x-8 gap-y-8  md:gap-10 lg:gap-12 ">
           <div className="space-y-2 md:space-y-4 lg:space-y-8 order-3 lg:order-1">
             <Logo width={250} height={250} />
 
             <div className="flex flex-col justify-between gap-6 md:gap-8 lg:gap-10">
-              <p className="text-sm md:text-base">
+              <p className="text-xs sm:text-sm md:text-base">
                 Nisida is a level 1 BEE rated company based in Industria
                 Johannesburg.
               </p>
-              <p className="text-xs md:text-sm xl:text-balance">
+              <p className="text-[10px] md:text-sm xl:text-balance">
                 Copyright © Nisida industry (PTY) 2025. All rights reserved
               </p>
             </div>
           </div>
 
           <div className="space-y-2 md:space-y-4 lg:order-2">
-            <p className="text-base font-semibold uppercase md:text-lg">
+            <p className="text-sm sm:text-base font-semibold uppercase md:text-lg">
               Services
             </p>
             <ul className="flex flex-col gap-1 lg:gap-2">
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
 
           <div className="space-y-2 md:space-y-4 lg:order-3">
-            <p className="text-base font-semibold uppercase md:text-lg">
+            <p className="text-sm sm:text-base font-semibold uppercase md:text-lg">
               Quick Links
             </p>
             <ul className="flex flex-col gap-1 lg:gap-2">
@@ -68,7 +68,7 @@ const Footer = () => {
           </div>
 
           <div className="space-y-2 md:space-y-4 order-4">
-            <p className="text-base font-semibold uppercase md:text-lg">
+            <p className="text-sm sm:text-base font-semibold uppercase md:text-lg">
               Contact Us
             </p>
             <div className="flex flex-col gap-6 md:gap-8">
@@ -83,7 +83,7 @@ const Footer = () => {
                   }
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm md:text-base font-medium "
+                  className="text-xs sm:text-sm md:text-base font-medium"
                 >
                   2164 Albertina Sisulu Road Industria, Johannesburg
                 </Link>
@@ -99,7 +99,7 @@ const Footer = () => {
                   </span>
                   <Link
                     href={"tel:+27738325621"}
-                    className="text-sm md:text-base"
+                    className="text-xs sm:text-sm md:text-base"
                   >
                     +27 73 832 5621
                   </Link>
@@ -113,7 +113,7 @@ const Footer = () => {
                   </span>
                   <Link
                     href={"tel:+27738325621"}
-                    className="text-sm md:text-base"
+                    className="text-xs sm:text-sm md:text-base"
                   >
                     +27 73 832 5621
                   </Link>
@@ -128,7 +128,7 @@ const Footer = () => {
                   </span>
                   <Link
                     href={"mailto:email@example.com"}
-                    className="text-sm md:text-base"
+                    className="text-xs sm:text-sm md:text-base"
                   >
                     john@gmail.com{" "}
                   </Link>
@@ -143,7 +143,7 @@ const Footer = () => {
                   </span>
                   <Link
                     href={"mailto:email@example.com"}
-                    className="text-sm md:text-base"
+                    className="text-xs sm:text-sm md:text-base"
                   >
                     john@gmail.com{" "}
                   </Link>

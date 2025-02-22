@@ -30,7 +30,7 @@ export default function ServicesNavLinks() {
 
       {isOpen && (
         <ul
-          className={`absolute bg-white flex flex-col gap-2 w-[250px] dark:bg-foreground p-4 shadow-lg  z-50
+          className={`absolute bg-white flex flex-col gap-2 w-[250px] dark:bg-dark-background p-4 shadow-lg  z-50
             transition-all duration-300 ease-in-out 
             ${isOpen ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"}
             origin-top`}
