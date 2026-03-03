@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import hero from "@/public/hero/bg-hero.png";
 import Image from "next/image";
+import hero from "@/public/hero/hero.png";
 
 const Hero = () => {
   return (
-    <section className="h-[cal(100dvh - 100px)] w-screen">
-      <div className="section-container  grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-        <div className="text-black">
+    <section className=" h-[cal(100dvh - 100px)] w-screen">
+      <div className="section-container grid grid-cols-1  lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="  text-black">
           <h1 className="text-2xl font-roboto md:text-4xl lg:text-5xl font-bold leading-tight text-blue-500">
             Precision Engineering for Reliable Motors & Commutators
           </h1>
@@ -22,18 +22,18 @@ const Hero = () => {
           <Button
             variant="default"
             size="lg"
-            className="mt-4 rounded-none text-sm tracking-wider transition-colors hover:bg-black md:mt-6 md:text-base lg:mt-8 lg:text-lg "
+            className="mt-6 rounded-none text-sm tracking-wider transition-colors hover:bg-black md:mt-8 md:text-base lg:mt-10 lg:text-lg "
             asChild
           >
             <Link href="/contact-us">Get a Quote</Link>
           </Button>
         </div>
 
-        <div className=" ">
+        <div className="">
           <Image
             src={hero}
             alt="Hero Background"
-            layout="fill"
+            // fill
             style={{ objectFit: "cover", objectPosition: "center" }}
             quality={90}
             priority={true}

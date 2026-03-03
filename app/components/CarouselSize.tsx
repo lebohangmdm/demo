@@ -66,7 +66,7 @@ function CarouselSize() {
             className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 shrink-0"
           >
             <div className="p-1">
-              <Card className="border-none shadow-none dark:bg-foreground">
+              <Card className="border-none shadow-none">
                 <CardContent className="flex aspect-square items-center justify-center p-6 ">
                   <Image
                     src={logo.image}
