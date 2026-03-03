@@ -9,20 +9,20 @@ interface SectionWrapperProps {
   delay?: number;
 }
 
-// Default animation variants
 const variants: Variants = {
   hidden: {
     opacity: 0,
-    y: 50,
+    y: 40,
   },
-  visible: {
+  visible: (delay: number = 0) => ({
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.5,
-      ease: "easeOut",
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1],
+      delay,
     },
-  },
+  }),
 };
 
 const SectionWrapper = ({
@@ -46,11 +46,8 @@ const SectionWrapper = ({
       initial="hidden"
       animate={controls}
       variants={variants}
+      custom={delay}
       className={`section-container ${className}`}
-      style={{
-        willChange: "opacity, transform",
-        transition: `delay ${delay}s`,
-      }}
     >
       {children}
     </motion.section>

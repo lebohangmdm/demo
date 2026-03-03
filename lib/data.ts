@@ -5,8 +5,8 @@ import img4 from "@/public/images/ac-motor.jpg";
 import img5 from "@/public/images/new-motor-manufacturing-and-motor-upgrade.jpg";
 import img6 from "@/public/images/brush-holders.jpg";
 import img7 from "@/public/images/services.jpg";
-import img8 from "@/public/images/slipring.jpg";
-import img9 from "@/public/images/armature-coils.jpg";
+import img8 from "@/public/images/slipring.png";
+import img9 from "@/public/images/amature-coils.png";
 
 import qualityImg from "@/public/images/sacas-quality.png";
 import safetyImg from "@/public/images/sacas-safety.png";
