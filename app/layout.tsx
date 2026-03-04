@@ -3,7 +3,6 @@ import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
-// import { ThemeProvider } from "./components/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,7 +19,7 @@ const roboto = Roboto({
 });
 
 const homeUrl =
-  "https://lhebnpqypzctccgh.public.blob.vercel-storage.com/hero.jpg";
+  "https://lhebnpqypzctccgh.public.blob.vercel-storage.com/bg-hero.png";
 
 export const metadata: Metadata = {
   title:
